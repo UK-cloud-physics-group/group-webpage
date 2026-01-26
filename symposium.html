@@ -49,6 +49,7 @@
       <div class="content-table flex-column">
         <div class="flex-row">
           <div class="flex-item flex-column">
+            <!-------------------------------------------------------------------------------------------->
             <h2>About</h2>
             <hr>
             <p class="text">
@@ -60,10 +61,22 @@
             <p class="text">
               To achieve that, we’re inviting all attendees to present both a lightning talk and an A4 poster introducing themselves and their research interests. We are also hosting two keynote lectures on the current frontiers of the field. And, importantly, we are organising time for social and breakout discussions throughout the two days.
             </p>
+            <!-------------------------------------------------------------------------------------------->
             <h2>What to expect</h2>
             <hr>
             <p class="text">
               Expect keynote lectures, lightning talks from all attendees, a chance to introduce yourself to the group and share your research and interests, and lots of time for networking and breakout discussions. Plus, hosted with the magical backdrop of one of the oldest universities in the world, you can expect to make the most of the fun quicks of Oxford University dining and bootleg historical tours!
+            </p>
+            <!-------------------------------------------------------------------------------------------->
+            <div id="sponsors-container"></div>
+            <script>
+              fetch("sponsors.html")
+                .then(response => response.text())
+                .then(html => {
+                  document.getElementById("sponsors-container").innerHTML = html;
+                });
+            </script>
+            <!-------------------------------------------------------------------------------------------->
             <h2>Details</h2>
             <hr>
             <p class="text">
@@ -87,6 +100,7 @@
             <p class="text">
               <strong>What will it cost?</strong> We want to keep registrationm costs low. Registration will cover food and refreshments for the two days. Travel and accommodation will be at your own expense.
             </p>
+            <!-------------------------------------------------------------------------------------------->
             <h2>Expression of interest</h2>
             <hr>
             <p class="text">
@@ -96,6 +110,7 @@
               <a href="https://forms.office.com/e/RhVd4CfkmN" target="_blank" style="display:inline-block; padding:10px 16px; background:#2b6cb0; color:#fff; text-decoration:none; border-radius:4px;"> Expression of Interest Form
                 </a>
             </p>
+            <!-------------------------------------------------------------------------------------------->
             <h2>Download the flyer to share with your colleagues</h2><hr>
             <p class="text"><a href="img/UK Early-Career Cloud Physics Symposium.pdf" download style="display:inline-block; padding:10px 16px; background:#2b6cb0; color:#fff; text-decoration:none; border-radius:4px;">Download flyer</a>
             </p> 
