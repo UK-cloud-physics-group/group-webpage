@@ -85,31 +85,14 @@
         </div>
         <!--End Text Only-->
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Sponsors-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="sponsors">Sponsors</h2>
-            <hr>
-            <div class="flex-row">
-              <div class="flex-item flex-column">
-                <p class="text">
-                  This symposium is sponsored by the National Centre for Atmospheric Science (NCAS),
-                  we are honoured and excited, and thank NCAS for their support of this initiative.
-                </p>
-              </div>
-              <div class="flex-item flex-column" style="align-items: flex-end;">
-                <a href="https://www.ncas.ac.uk/" target="_blank" rel="noopener noreferrer">
-                  <img
-                    src="img/ncas_logo_6743c528.png"
-                    alt="NCAS logo"
-                    style="max-width: 200px; height: auto;"
-                  >
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--End Sponsors-->
+        <div id="sponsors-container"></div>
+        <script>
+          fetch("sponsors.html")
+            .then(response => response.text())
+            .then(html => {
+              document.getElementById("sponsors-container").innerHTML = html;
+            });
+        </script>
         <!-------------------------------------------------------------------------------------------->
         <!--Start Text Only-->
         <div class="flex-row">
