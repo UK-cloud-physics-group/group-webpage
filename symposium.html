@@ -70,7 +70,7 @@
             <h2>Submitting your research</h2><hr>
             <div id="presentation-guidelines-container"></div>
             <script>
-            fetch("presentation-guidelines.html")
+            fetch("presentation_guidelines")
               .then(response => response.text())
               .then(html => {
                 document.getElementById("presentation-guidelines-container").innerHTML = html;
