@@ -65,20 +65,21 @@
             <!-------------------------------------------------------------------------------------------->
             <h2>Register now</h2><hr>
             <p class="text">
-              Registration is open now, and closes at 23:59 UCT 8 March 2026. 
-            </p><p class="text">
-              <a href="https://www.oxforduniversitystores.co.uk/product-catalogue/atmospheric-oceanic-planetary-physics/events/uk-early-career-cloud-physics-2026-symposium" target="_blank" style="display:inline-block; padding:10px 16px; background:#2b6cb0; color:#fff; text-decoration:none; border-radius:4px;"> Register
-                </a>
-            </p>
+              Registration closed at 23:59 UCT 8 March 2026. 
+            <!-------------------------------------------------------------------------------------------->
+            <h2>Submitting your research</h2><hr>
+            <div id="presentation-guidelines-container"></div>
+            <script>
+            fetch("presentation-guidelines.html")
+              .then(response => response.text())
+              .then(html => {
+                document.getElementById("presentation-guidelines-container").innerHTML = html;
+              });
+            </script>
             <!-------------------------------------------------------------------------------------------->
             <h2>Event agenda</h2><hr>
             <p class="text">
               Details coming soon.
-            </p>
-            <!-------------------------------------------------------------------------------------------->
-            <h2>Submitting your research</h2><hr>
-            <p class="text">
-              All participants are invited to present a one slide lightning talk and poster on their research. Posters should be A3 size poster (landscape preferred). These will be printed by us and presented at the event. The posters will also be published on the group website to help show off your research and interests to members of the community unable to attend in person. These contributions must be submitted virtually by 9 AM on Wednesday, the 18th March, details on how to submit these will be shared closer to the date.
             </p>
             <!-------------------------------------------------------------------------------------------->
             <h2>More details</h2><hr>
